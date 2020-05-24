@@ -32,15 +32,15 @@ nameColors = [[0.7, 0.7, 0.9] for i in range(13)]
 # convert to percentage
 data = np.around(data*100, 2)
 
-plt.table(
+table = plt.table(
     cellText=data,
     cellColours=colors,
     rowLabels=cardnames,
     rowColours=nameColors,
     colLabels=cardnames,
     colColours=nameColors,
-    loc="center right"
+    loc="center",
 )
 plt.axis("off")
-plt.xlabel("Same suited")
+plt.title("2 player poker starting hand win rates in percentage [%]")
 plt.savefig(file_name.split(".")[0] + ".pdf")
