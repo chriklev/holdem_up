@@ -1,4 +1,4 @@
-package main
+package startinghandprobs
 
 import (
 	"encoding/csv"
